@@ -1,6 +1,6 @@
 package com.company;
 
-public class Mammal extends Animal{
+public class Mammal extends Animal implements AnimalMove{
 
     String skinColor_Awad_57036;
 
@@ -45,5 +45,10 @@ public class Mammal extends Animal{
                 ", weight_Awad_57036=" + weight_Awad_57036 +
                 ", skinColor_Awad_57036='" + skinColor_Awad_57036 + '\'' +
                 '}';
+    }
+
+    @Override
+    public void move_Awad_57036() {
+        System.out.println("Mammals move");
     }
 }

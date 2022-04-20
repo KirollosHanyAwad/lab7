@@ -1,6 +1,6 @@
 package com.company;
 
-public class Blowfish extends Fish{
+public class Blowfish extends Fish implements AnimalBehavior, AnimalMove{
 
     String species_Awad_57036;
 
@@ -45,5 +45,15 @@ public class Blowfish extends Fish{
                 ", species_Awad_57036='" + species_Awad_57036 + '\'' +
                 ", scalesColor_Awad_57036='" + scalesColor_Awad_57036 + '\'' +
                 '}';
+    }
+
+    @Override
+    public void sleep_Awad_57036() {
+        System.out.println("Blowfish sleep");
+    }
+
+    @Override
+    public void move_Awad_57036() {
+        System.out.println("Blowfish swim in water");
     }
 }

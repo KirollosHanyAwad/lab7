@@ -1,6 +1,6 @@
 package com.company;
 
-public class Dog extends Mammal{
+public class Dog extends Mammal implements AnimalBehavior, AnimalMove{
 
     String species_Awad_57036;
 
@@ -46,4 +46,15 @@ public class Dog extends Mammal{
                 ", skinColor_Awad_57036='" + skinColor_Awad_57036 + '\'' +
                 '}';
     }
+
+    @Override
+    public void sleep_Awad_57036() {
+        System.out.println("Dogs sleep");
+    }
+
+    @Override
+    public void move_Awad_57036() {
+        System.out.println("Dogs run on 4 legs");
+        }
+
 }

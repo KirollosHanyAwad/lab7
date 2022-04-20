@@ -1,6 +1,6 @@
 package com.company;
 
-abstract class Animal {
+abstract class Animal implements AnimalMove {
 
     String name_Awad_57036;
     int age_Awad_57036;

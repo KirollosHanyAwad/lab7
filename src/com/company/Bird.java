@@ -1,6 +1,6 @@
 package com.company;
 
-public class Bird extends Animal{
+public class Bird extends Animal implements AnimalMove{
     String featherColor_Awad_57036;
 
     public Bird(){
@@ -44,5 +44,10 @@ public class Bird extends Animal{
                 ", weight_Awad_57036=" + weight_Awad_57036 +
                 ", featherColor_Awad_57036='" + featherColor_Awad_57036 + '\'' +
                 '}';
+    }
+
+    @Override
+    public void move_Awad_57036() {
+        System.out.println("Birds move");
     }
 }

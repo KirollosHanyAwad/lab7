@@ -1,6 +1,6 @@
 package com.company;
 
-public class Pigeon extends Bird{
+public class Pigeon extends Bird implements AnimalBehavior, AnimalMove{
 
     String species_Awad_57036;
 
@@ -45,5 +45,15 @@ public class Pigeon extends Bird{
                 ", featherColor_Awad_57036='" + featherColor_Awad_57036 + '\'' +
                 ", species_Awad_57036='" + species_Awad_57036 + '\'' +
                 '}';
+    }
+
+    @Override
+    public void sleep_Awad_57036() {
+        System.out.println("pigeons sleep");
+    }
+
+    @Override
+    public void move_Awad_57036() {
+        System.out.println("Pigeons fly with 2 wings");
     }
 }
